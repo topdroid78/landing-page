@@ -1,0 +1,384 @@
+:root {
+    --color-one: #8F43EE; 
+    --color-two: #F0EB8D;
+}
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Work Sans', sans-serif; */
+}
+
+
+html{
+
+    scroll-behavior: smooth;
+    
+    }
+
+
+:not(i) {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Dancing Script', cursive;
+    color: var(--color-one);
+      
+}
+
+
+.navigation {
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 1.2rem;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    z-index: 100;
+    
+}
+
+.navigation > header {
+    width: 50vw;
+}
+
+.title {
+    font-size: 2rem;
+    color: var(--color-two);
+}
+
+.navigation > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 45vw;
+    list-style-type: none;
+}
+
+.navigation > ul > li > a {
+    color: var(--color-two);
+    font-size: 1.2rem;
+    padding: 0.6rem;
+}
+
+.navigation > ul > li > a:hover {
+    color: var(--color-one);
+    background-color: var(--color-two);
+    border-radius: 50%;
+}
+
+.navigation > ul > li > a:active {
+    color: var(--color-two);
+    background-color: var(--color-one);
+}
+
+/* Main */
+
+.wrapper {
+    position: relative;
+    width: 85vw;
+    margin-inline: auto;
+    background-color: white;
+}
+
+
+/* Hero + Form */
+
+.hero {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero > * {
+    margin-bottom: 1rem;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#email {
+    padding: 0.4rem 2rem;
+    border: 0.2rem solid black;
+    border-radius: 5%;
+    font-size: 1rem;
+}
+
+.sub-button {
+    padding: 0.4rem 1.9rem;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    border: 0.2rem solid black;
+    border-radius: 6%;
+    margin-bottom: 2rem;
+}
+
+.sub-button:hover {
+    background-color: var(--color-two);
+    color: var(--color-one);
+}
+
+.sub-button:active {
+    background-color: var(--color-one);
+    color: var(--color-two);
+}
+
+/* Features Section */
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.grid {
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+    max-width: 800px;
+    margin-inline: auto;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.icon:hover {
+    color: var(--color-one);
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    padding: 1rem;
+    
+}
+
+/* Video/Tutorial Section */
+
+#how-it-works {
+    
+    margin-block: 3rem; 
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+ }
+
+#video {
+    border-radius: 2%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+     width: 100%;
+    height: 100%;
+}
+
+/* Pricing/Product Section */
+
+#pricing {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.product {
+    border: 0.2rem solid black;
+    border-radius: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    width: 25vw;
+    max-width: 300px;
+    
+
+}
+
+.product > * {
+    margin-bottom: 1rem;
+}
+
+.product-name {
+    font-size: 2rem;
+    padding-block: 1.2rem;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-one);
+    color: var(--color-two);
+}
+
+.product > .price::before {
+    content: "€";
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.buy-btn {
+    padding: 0.8rem 1.9rem;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    border: 0.2rem solid black;
+    border-radius: 2%;
+    text-transform: uppercase;
+}
+
+.buy-btn:hover {
+    background-color: var(--color-two);
+    color: var(--color-one);
+}
+
+.buy-btn:active {
+    background-color: var(--color-one);
+    color: var(--color-two);
+}
+
+/* Footer */
+
+footer {
+    width: 100vw;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    margin-top: 3rem;
+    position: relative;
+    bottom: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+
+footer > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+footer > ul > li > a {
+    padding: 0.2rem;
+}
+
+footer > ul > li > a:hover {
+    color: var(--color-one);
+    background-color: var(--color-two);
+    border-radius: 15%;
+}
+
+footer > ul > li > a:active {
+    color: var(--color-two);
+    background-color: var(--color-one);
+}
+
+footer > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/* Anchor style */
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: none;
+}
+
+/* Media Query */
+
+@media (max-width: 700px) {
+    
+    .navigation {
+        text-align: center;
+    }
+    
+    .navigation > ul {
+        display: none;
+       
+    }
+
+    #pricing {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        gap: 2rem;
+    }
+
+    #pricing > .product {
+        min-width: 60vw;
+    }
+
+}
+
+@media (max-width: 510px) {
+    .hero {
+        margin-top: 150px;
+    }
+
+    .hero > h2, p {
+        text-align: center;
+    }
+    
+    .desc > h3 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 450px) {
+    
+    .grid {
+        display: block;
+    }
+
+    .desc > h3 {
+        margin-bottom: 1rem;
+    }
+    
+    .icon > i {
+        display: none;
+    }
+}
